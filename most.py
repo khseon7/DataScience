@@ -19,8 +19,7 @@ for line in text:
         if re.match("\d+:\d+",word):
             if result[past_word][0]<count:
                 result[past_word][0]=count
-                # 마지막 문장에서 backspace가 추가되어 있으므로 그것을 빼서 초반 문장과 맞게 해준다.
-                str_value=str_value-" "
+                str_value=str_value
                 result[past_word][1]=str_value
             past_word=word
             count=0
