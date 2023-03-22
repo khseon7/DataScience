@@ -26,7 +26,7 @@ for line in text:
             count=0
             str_value=''
         else:
-            str_value=str_value+word+" "
+            str_value=str_value+word+" " # 해당 행과절에 어떤 문자열이 있었는지 추가
             count+=len(word)
 # 마지막에 추가한 ''을 삭제
 result.pop('')
